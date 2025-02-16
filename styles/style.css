@@ -1,12 +1,11 @@
 @charset "UTF-8";
-@font-face {
-    font-family: Montserrat;
-    src: url(https://fonts.google.com/specimen/Montserrat);
 
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --font_presentation: "Montserrat", serif;
+    --font_presentation_number: "Fraunces", serif;
 }
-
-
-
 *{
     margin: 0px;
     padding: 0px;
@@ -14,21 +13,83 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    display: flex;
-    justify-content: center;    
-    align-items: center;
-}
-main{
-
+    background-color: hsl(30, 38%, 92%);
     height: 100vh;
+    width: 100vw;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row;
-
-    width: 600px;
-    height: 400px;
+    flex-flow: row nowrap;
 }
-main img{
-    object-fit: cover;
+main{
+    background-color: white;
+    
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    display: flex;    
+    
+    flex: 0 1 560px;
+}
+main > div > img{
+
+}
+main > div{
+    display: flex;
+    
+}
+main > div#content{
+    padding: 30px;
+    
+    flex-flow: column nowrap;
+
+
+}
+main > div#content > h1{
+    font-size: 1.3em;
+    font-family: var(--font_presentation);
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+main > div#content > h2{
+    font-family: var(--font_presentation_number);
+    font-size: 2.3em;
+    font-weight: 700;
+    padding-bottom: 10px;
+    line-height: 1em;
+    
+}
+
+main > div#content > p{
+    color: hsl(228, 12%, 48%);
+    line-height: 1.6em;
+    padding-bottom: 12px;
+
+}
+
+main > div#content > h2#price{
+    color: hsl(158, 36%, 37%);
+    padding-bottom: 15px;
+    font-size: 1.6em;
+}
+
+main > div#content > h2#price::after{
+    content: "$169,99";
+    font-size: 0.6em;
+    font-weight: 500;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+main > div#content > a{
+    background-color: hsl(158, 36%, 37%);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
 }

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 600px) {
+    body{
+        width: 90%;
+        margin: auto;
+        
+        display: flex;
+        justify-content: center;
+        
+    }
+    main{
+        height: auto;
+        
+        align-items: center;
+        
+        flex-flow: column nowrap;
+    }
+    main > div#image{
+        
+    }
+    main > div#content{
+          
+    }
+}
