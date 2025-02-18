@@ -1,16 +1,14 @@
 @charset "UTF-8";
 
 @media screen and (max-width: 768px) {
-    body{
-        flex-flow: column nowrap;
-    }
     main{
         height: auto;
-        width: 90%;
-        margin: 10% 0px;
+        
+        margin: 0px;
 
+        display: flex;
         flex-flow: column wrap;
-        flex: 0 1 560px;
+        flex: 0 1 90%;
         align-items: center;
         justify-content: center;
     }
@@ -24,7 +22,7 @@
     }
     main > div#content{
         width: auto;
-        box-sizing: border-box;;
+        
         
          
     }
