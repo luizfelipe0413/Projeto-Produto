@@ -13,7 +13,10 @@
 <body>
     <main>
         <div id="image">
-            <img src="images/produto.jpg" alt="Imagem de produto ilustrativo">
+            <picture>
+                <source media="(max-width: 768px)" srcset="images/produto_mobile.jpg">
+                <img src="images/produto.jpg" alt="Imagem de produto ilustrativo">
+            </picture>
         </div>
         <div id="content">
             <h1>P e r f u m e</h1>

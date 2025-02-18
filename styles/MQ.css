@@ -1,25 +1,31 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     body{
-        width: 90%;
-        margin: auto;
-        
-        display: flex;
-        justify-content: center;
-        
+        flex-flow: column nowrap;
     }
     main{
         height: auto;
-        
+        width: 90%;
+        margin: 10% 0px;
+
+        flex-direction: column;
+        flex: 1 1 560px;
         align-items: center;
+        justify-content: center;
+    }
+    main > div{
+        flex-direction: column;
         
-        flex-flow: column nowrap;
+        
     }
     main > div#image{
-        
+        width: 100%;
     }
     main > div#content{
-          
+        width: auto;
+        box-sizing: border-box;
+        
+         
     }
 }
