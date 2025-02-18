@@ -50,9 +50,8 @@ main > div#image img{
 }
 main > div#content{
     padding: 30px;
-    
 
-    flex-flow: column  nowrap;
+    flex-flow: column nowrap;
     flex: 1;
 
 }
