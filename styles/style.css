@@ -20,7 +20,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row nowrap;
+    
     
 }
 main{
@@ -30,14 +30,14 @@ main{
     border-radius: 10px;
     overflow: hidden;
 
-    
     display: flex;
+    flex-flow: row nowrap;
     flex: 0 1 560px;
 }
 
 main > div{
     display: flex;
-    
+    flex-flow: row wrap;
 }
 main > div#image{
     flex: 1;
