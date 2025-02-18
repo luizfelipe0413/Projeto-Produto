@@ -9,7 +9,7 @@
         width: 90%;
         margin: 10% 0px;
 
-        flex-direction: column;
+        flex-flow: column wrap;
         flex: 0 1 560px;
         align-items: center;
         justify-content: center;

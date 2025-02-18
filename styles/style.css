@@ -30,8 +30,8 @@ main{
     border-radius: 10px;
     overflow: hidden;
 
-    flex-wrap: wrap;
-    display: flex;    
+    
+    display: flex;
     flex: 0 1 560px;
 }
 
