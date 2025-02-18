@@ -51,7 +51,11 @@ main > div#image img{
 main > div#content{
     padding: 30px;
     
-    
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-self: center;
+    flex-flow: column  nowrap;
     flex: 1;
 
 }
