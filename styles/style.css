@@ -51,9 +51,7 @@ main > div#image img{
 main > div#content{
     padding: 30px;
     
-    display: flex;
-    flex-direction: column;
-    width: auto;
+    
     flex: 1;
 
 }
