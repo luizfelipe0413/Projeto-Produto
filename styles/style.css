@@ -21,7 +21,7 @@ body{
     justify-content: center;
     align-items: center;
     
-    
+    transition: width .2s ease, height .2s ease;
 }
 main{
     background-color: white;
@@ -29,15 +29,20 @@ main{
     height: auto;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.298);
 
     display: flex;
     flex-flow: row nowrap;
     flex: 0 1 560px;
+
+    
 }
 
 main > div{
     display: flex;
     flex-flow: row wrap;
+
+    
 }
 main > div#image{
     flex: 1;
@@ -56,31 +61,31 @@ main > div#content{
 
 }
 main > div#content > h1{
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-family: var(--font_presentation);
-    font-weight: 600;
+    font-weight: 400;
     padding-bottom: 10px;
 }
 
 main > div#content > h2{
     font-family: var(--font_presentation_number);
-    font-size: 2.3em;
-    font-weight: 700;
-    padding-bottom: 10px;
+    font-size: 2.2em;
+    font-weight: 600;
+    padding-bottom: 15px;
     line-height: 1em;
 }
 
 main > div#content > p{
     color: hsl(228, 12%, 48%);
     line-height: 1.6em;
-    padding-bottom: 12px;
+    padding-bottom: 15px;
 
 }
 
 main > div#content > h2#price{
     color: hsl(158, 36%, 37%);
     padding-bottom: 15px;
-    font-size: 1.6em;
+    font-size: 1.8em;
 }
 
 main > div#content > h2#price::after{
@@ -98,7 +103,12 @@ main > div#content > a{
     text-align: center;
     text-decoration: none;
     color: white;
+    font-weight: 600;
 
 
 
+}
+main > div#content > a:active{
+    background-color: hsl(159, 37%, 24%);
+    transition: .1s;
 }
