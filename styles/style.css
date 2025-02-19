@@ -56,9 +56,9 @@ main > div#content{
 
 }
 main > div#content > h1{
-    font-size: 1.3em;
+    font-size: 1.4em;
     font-family: var(--font_presentation);
-    font-weight: 500;
+    font-weight: 600;
     padding-bottom: 10px;
 }
 
